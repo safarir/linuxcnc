@@ -797,7 +797,7 @@ static RtapiApp *makeApp()
             return result;
         }
     }
-    rtapi_print_msg(RTAPI_MSG_ERR, "Note: Using POSIX realtime\n");
+    rtapi_print_msg(RTAPI_MSG_INFO, "Note: Using POSIX realtime\n");
     return new Posix(SCHED_FIFO);
 }
 RtapiApp &App()
